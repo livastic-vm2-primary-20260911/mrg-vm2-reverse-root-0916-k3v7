@@ -1,0 +1,14 @@
+pull_request_rules:
+  - name: VM2 reverse fork update topology
+    conditions:
+      - title = VM2_REVERSE_FORK_UPDATE
+    actions:
+      update:
+        bot_account: livastic-vm2-primary-20260911
+
+  - name: VM2 reverse fork squash topology
+    conditions:
+      - title = VM2_REVERSE_FORK_SQUASH
+    actions:
+      squash:
+        bot_account: livastic-vm2-primary-20260911
